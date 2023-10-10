@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="my portfolio">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#mywork">My Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="bi bi-x-circle-fill" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="bi bi-list"onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Frontend Developer</p>
+                    <h1>Hi, I'm <span>Keerthi</span></h1>
+                </div>
+            </div>
+        </div>
+        <!-----------about------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <img src="my-image.jpg">
+                    </div>
+                    <div class="col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Seeking a challenging career opportunity and being a part of progressive organization that
+                            encourage me to expand knowledge alongside being conductive to enhancing the organization’s success.</p>
+                    
+                        <div class="title-contents active-title" id="skills" >
+                            <p class="title-links" >Skills</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>SQL</li>
+                                <li>JAVA</li>
+                            </ul>
+                        </div>
+                        <div class="title-contents" id="education">
+                            <p class="title-links  bi bi-mortarboard-fill" >Education</p>
+                            <ul>
+                                <li><span>2019-2023</span><br>Btech at Sri Padmavathi Womens University</li>
+                                <li><span>2017-2019</span><br>HSC at Narayana Junior College</li>
+                                <li><span>2017</span><br>SSC at Sree Swamy Vivekananda School</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="title-contents" id="project">
+                            <p class="title-links">Project</p>
+                            <ul>
+                                <li><span>Online payment fraud detection using Machine Learning</span><br>Now a days online payment is being used everywhere.
+                                    Due to this frauds also increasing.so in our project we used an
+                                    xg boost machine learning model to detect the fraud.
+                                    Here we have taken credit card fraud detection as an example and done this project.
+                                    The algorithms here used are xg boost,random forest and decision tree.
+                                </li>
+                                
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mywork" class="mywork">
+            <h1 class="sub-title1">MY WORK</span></h1>
+            <div class="container">
+                 <div class="work-images">
+                    <div class="image">
+                        <img src="image1.jpeg">
+                    </div>
+                    <div class="image">
+                        <img src="image2.jpeg">
+                    </div>
+                    <div class="image">
+                        <img src="image3.jpeg">
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="bi bi-send"></i>konakeerthi26@gmail.com</p>
+                        <p><i class="bi bi-telephone-fill"></i>9573390313</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                        </div>
+                        <a href="#" download class="btn btn1">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn1">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>@copyright.Powered by Keerthi<i class="bi bi-heart-fill"></i></p>
+            </div>
+        </div>
+        <script>
+            var sidemeu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemeu.style.right="0";
+            }
+            function closemenu(){
+                sidemeu.style.right="-200px";
+            }
+        </script>
+
+    </body>
+</html>
